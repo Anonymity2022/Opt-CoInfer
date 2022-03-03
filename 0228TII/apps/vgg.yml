@@ -1,0 +1,68 @@
+# =========================== Basic Settings ===========================
+# machine info
+num_gpus_per_job: 1  # number of gpus each job need
+num_cpus_per_job: 10  # number of cpus each job need
+memory_per_job: 380  # memory requirement each job need
+gpu_type: "nvidia-tesla-p100"
+
+# data
+dataset: imagenet1k
+data_transforms: imagenet1k_basic
+data_loader: imagenet1k_basic
+data_loader_workers: 8
+
+# info
+image_size: 224
+topk: [1, 5]
+
+# optimizer
+optimizer: sgd
+momentum: 0.9
+weight_decay: 0.0001
+nesterov: True
+
+# lr
+# lr: 0.1
+# lr_scheduler: multistep
+# multistep_lr_milestones: [60, 120, 160]
+# multistep_lr_gamma: 0.2
+
+# model profiling
+profiling: [gpu]
+
+#
+random_seed: 1995
+batch_size: 256
+reset_parameters: True
+
+
+# =========================== Override Settings ===========================
+log_dir: logs/
+soft_target: False
+
+model: models.vgg
+width_mult: 1.0
+
+width_mult_list: [1.0]
+# uncomment here if you want to test other widths.
+# width_mult_list_test: [0.36, 0.51415926]
+width_mult_range: [1.0]
+data_transforms: imagenet1k_mobile
+num_gpus_per_job: 1
+
+
+#user_define
+dataset_dir: /home/zzh/2021TII_Bayseian/stanford_cars/
+data_base_address: '/home/zzh/2021TII_Bayseian/database_stanford_cars0111.txt'
+lr: 0.01
+lr_scheduler: linear_decaying
+num_epochs: 25
+batch_size: 128
+
+# test pretrained
+test_only: False
+pretrained: logs/best_model.pt
+z_partition_id: 16
+z_pruning_num: 12
+z_quantization: 8
+gpu: 0
