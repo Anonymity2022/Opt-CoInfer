@@ -9,6 +9,14 @@ Therefore, we propose Opt-CoInfer, a systematic framework to provide promising s
 For a given CNN model, IoT-Cloud system and inference latency requirement, Opt-CoInfer provides the most accurate scheme satisfying the latency requirement.   
 
 For a given CNN model, IoT-Cloud system and inference accuracy requirement, Opt-CoInfer provides the fastest scheme satisfying the accuracy requirement.
+## Install
+Clone repo and install requirements.txt in a Python>=3.7.0 environment.   
+
+```
+git clone https://github.com/Anonymity2022/Opt-CoInfer.git  # clone
+cd Opt-CoInfer
+pip install -r requirements.txt  # install
+```
 
 ## Example
 Here, an example of VGG-16 on Stanford-Cars dataset with a practical IoT-Cloud system (illustrated in the following figure) is provided for evaluation.
