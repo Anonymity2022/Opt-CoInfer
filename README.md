@@ -6,10 +6,10 @@ For efficient CNN inference in various industrial scenarios with resource limita
 
 Therefore, we propose Opt-CoInfer, a systematic framework to provide promising scheme and achieve the optimal CCI for any given industrial scenarios (i.e. the combination of CNN model, IoT-Cloud system and inference latency/accuracy requirement).
 
-For a given CNN model, IoT-Cloud system and inference latency requirement, Opt-CoInfer provides the most accurate scheme satisfying the latency requirement.   
+For a given CNN model, IoT-Cloud system and inference ***latency*** requirement, Opt-CoInfer provides the ***most accurate*** scheme satisfying the ***latency*** requirement.   
 
-For a given CNN model, IoT-Cloud system and inference accuracy requirement, Opt-CoInfer provides the fastest scheme satisfying the accuracy requirement.
-## Install
+For a given CNN model, IoT-Cloud system and inference ***accuracy*** requirement, Opt-CoInfer provides the ***fastest*** scheme satisfying the ***accuracy*** requirement.
+## Installation
 Clone repo and install requirements.txt in a Python>=3.7.0 environment.   
 
 ```
