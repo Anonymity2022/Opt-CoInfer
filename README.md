@@ -40,7 +40,7 @@ python latency_search.py -accuracy_loss x -bandwidth x -gpu x.
 
 The parameter `-latency` represents the ratio of the minimal latency derived from single-end approach (i.e., make whole CNN inference on IoT or Cloud), and can be set as **0.6/0.7**.  
 
-The parameter `-accuracy` loss represents the accuracy loss (%) compared with the original CNN model, and can be set as **0.1/0.5**.  
+The parameter `-accuracy` loss represents the accuracy loss (%) compared with the original CNN model, and can be set as **0.01/0.05**.  
 
 The parameter `-bandwidth` represents the bandwidth (Mbps) between IoT, and can be set as **0.5/1/2**.  
 
