@@ -21,7 +21,7 @@ pip install -r requirements.txt  # install
 ## Example
 Here, an example of VGG-16 on Stanford-Cars dataset with a practical IoT-Cloud system (illustrated in the following figure) is provided for evaluation.
 
-![img1](./assets/img/img1.png)
+![img1](./assets/img/img1.png){:height="50%" width="50%"}
 
 
 To avoid time-consuming evaluation of various schemes, the database of evaluated scheme (i.e., [accuracy_search.txt](https://github.com/Anonymity2022/Opt-CoInfer/blob/main/accuracy_search.txt), [latency_search.txt](https://github.com/Anonymity2022/Opt-CoInfer/blob/main/latency_search.txt)) is provided.  
